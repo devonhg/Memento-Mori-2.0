@@ -1,0 +1,22 @@
+Need to find a way to call the view script sooner. 
+
+
+Left off working on the button for closing the drawer, need a way to elegently integrate that.
+
+10/9/2017
+Left off working out how to integrate parenting into the buttons. Looks like the best way to do this
+is to add a "lock to parent" argument to the button scripts, then x/y is relative to the parent. 
+
+10/10/2017
+I got a clear system going in the scripts for setting the x adjustment values, now I just need to 
+program into the buttons what to do when told they have a parent. 
+
+10/12/2017
+I think I got the buttons "parenting" themselves well, now I just need to test them. 
+
+To Test them, next time I sit down I'm going to do the following: 
+- Build out a drawer, get the "Close Drawer" button working.
+
+To accomplish this, in the create drawer script a button will be created childed
+to the created drawer. This will then be the "up" or "down arrow" based on what kind of 
+drawer it is

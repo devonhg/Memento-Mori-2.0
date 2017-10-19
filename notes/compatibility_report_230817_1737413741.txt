@@ -1,0 +1,68 @@
+Converting GML script : ${project_dir}\scripts\dt_add_con_room\dt_add_con_room.gml
+Converted description : /// @description dt_add_con_room( object, ...room1, ...room2,... );/// @function dt_add_con_room
+/// @param  object
+/// @param  ...room1
+/// @param  ...room2
+/// @param ...
+
+Converting GML script : ${project_dir}\scripts\dt_add_room_con\dt_add_room_con.gml
+Converted description : /// @description dt_add_room_con( Room, Controller1, Controller2, ... );/// @function dt_add_room_con
+/// @param  Room
+/// @param  Controller1
+/// @param  Controller2
+/// @param  ...
+
+Converting GML script : ${project_dir}\scripts\dt_link_commons\dt_link_commons.gml
+Converted description : /// @description dt_link_commons( "Slug" );/// @function dt_link_commons
+/// @param  "Slug"
+
+Converting GML script : ${project_dir}\scripts\dt_add_persistent_con\dt_add_persistent_con.gml
+Converted description : /// @description dt_add_persistent_con(Controller1, Controller2, ...);/// @function dt_add_persistent_con
+/// @param Controller1
+/// @param  Controller2
+/// @param  ...
+
+Converting GML script : ${project_dir}\scripts\dt_rem_per_controller\dt_rem_per_controller.gml
+Converted description : /// @description dt_rem_per_controller( controller );/// @function dt_rem_per_controller
+/// @param  controller
+
+Converting GML script : ${project_dir}\scripts\dt_rem_rm_controller\dt_rem_rm_controller.gml
+Converted description : /// @description dt_rem_rm_controller( controller, room );/// @function dt_rem_rm_controller
+/// @param  controller
+/// @param  room
+
+Converting GML script : ${project_dir}\scripts\dt_get_rooms\dt_get_rooms.gml
+Converted description : /// @description dt_get_rooms( "slug1", ..."slug2", ... );/// @function dt_get_rooms
+/// @param  "slug1"
+/// @param  ..."slug2"
+/// @param  ...
+
+Converting GML script : ${project_dir}\scripts\dt_get_objects\dt_get_objects.gml
+Converted description : /// @description dt_get_objects( "slug1", ..."slug2", ... );/// @function dt_get_objects
+/// @param  "slug1"
+/// @param  ..."slug2"
+/// @param  ...
+
+Converting GML script : ${project_dir}\scripts\dt_create_per_controllers\dt_create_per_controllers.gml
+Converted description : /// @description dt_create_per_controllers()/// @function dt_create_per_controllers
+
+Converting GML script : ${project_dir}\scripts\dt_create_rm_controllers\dt_create_rm_controllers.gml
+Converted description : /// @description dt_create_rm_controllers();/// @function dt_create_rm_controllers
+
+Converting GML script : ${project_dir}\scripts\dt_ut_list_room_con\dt_ut_list_room_con.gml
+Converted description : /// @description dt_ut_list_room_con( room, controller );/// @function dt_ut_list_room_con
+/// @param  room
+/// @param  controller
+
+Converting GML script : ${project_dir}\scripts\dt_init_controller_engine\dt_init_controller_engine.gml
+Converted description : /// @description dt_init_controller_engine(); /// @function dt_init_controller_engine
+
+Converting GML script : ${project_dir}\objects\dt_con_master\Create_0.gml
+Converted description : /// @description Readme
+
+Converting GML script : ${project_dir}\objects\dt_con_master\Other_4.gml
+Converted description : /// @description Include room specific objects
+
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script __global_object_depths.gml

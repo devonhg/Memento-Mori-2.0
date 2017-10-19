@@ -1,0 +1,43 @@
+**Overview**
+
+Systems Utilized : 
+
+--DT_Script_Library : Provides scripts for general applications
+
+View : 
+The view is adjusted to match the dimenions of the devices screen size, and then is scaled
+scaled to match. 
+
+Dimensions are a height of 1000px with a variable width, depending on the device. The app is 
+strictly vertically oriented. 
+
+Objects : 
+
+The entire app is broken down into an MVC model, as such...
+
+CONTROLLER
+con_master_controller - manages the interaction between the view objects and the controller
+con_forms - this handles all the input by the user
+con_push_notifications - handles the push notifications
+scr_view_scale - this script scales the view for the app
+
+VIEW
+vw_pendulum - The pendulum object that sways in the background
+vw_button - a button, that when pressed calls a script
+vw_button_icon - same as a regular buttonm, but works off of an image instead
+vw_drawer - A drawer, that contains buttons or text that can be taken out or put away in use
+vw_day_counter - the counter the user sees on the main screen
+vw_timer - the timer used in the meditation portion of the app
+
+MODEL
+global.quote_database = a database containing the library of quotes
+global.death_day = a date object containing the death day for the user
+
+Systems : 
+
+The following systems are required...
+
+Sprite, Box, and Font Scaling
+- A set of "wrapper" scripts that draw sprites, boxes, and fonts based on the width of the screen
+
+System for loading and unloading the saves to a global array

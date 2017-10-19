@@ -1,0 +1,108 @@
+Converting GML script : ${project_dir}\scripts\dt_zero\dt_zero.gml
+Converted description : /// @description dt_zero( number1m, number2, ...)/// @function dt_zero
+/// @param  number1m
+/// @param  number2
+/// @param  ...
+
+Converting GML script : ${project_dir}\scripts\dt_show_message\dt_show_message.gml
+Converted description : /// @description dt_show_message( message );/// @function dt_show_message
+/// @param  message
+
+Converting GML script : ${project_dir}\scripts\dt_full_window\dt_full_window.gml
+Converted builtin : line 43 : view_wview[0] = __W -> __view_set( e__VW.WView, 0, __W )
+Converted builtin : line 42 : view_hview[0] = __H -> __view_set( e__VW.HView, 0, __H )
+Converted builtin : line 34 : view_visible[0] = true -> __view_set( e__VW.Visible, 0, true )
+Converted builtin : line 51 : view_wport[0] = wPort -> __view_set( e__VW.WPort, 0, wPort )
+Converted builtin : line 58 : view_wport[0] = __dispH -> __view_set( e__VW.WPort, 0, __dispH )
+Converted builtin : line 50 : view_hport[0] = hPort -> __view_set( e__VW.HPort, 0, hPort )
+Converted builtin : line 57 : view_hport[0] = __dispW -> __view_set( e__VW.HPort, 0, __dispW )
+Converted description : /// @description dt_full_window(Height, Scale, (Width) ); /// @function dt_full_window
+/// @param Height
+/// @param  Scale
+/// @param  (Width
+
+Converting GML script : ${project_dir}\scripts\dt_nth_round\dt_nth_round.gml
+Converted description : /// @description dt_nth_round( value, nth );/// @function dt_nth_round
+/// @param  value
+/// @param  nth
+
+Converting GML script : ${project_dir}\scripts\dt_track\dt_track.gml
+Converted description : /// @description dt_track('index', value);/// @function dt_track
+/// @param 'index'
+/// @param  value
+
+Converting GML script : ${project_dir}\scripts\dt_alarm\dt_alarm.gml
+Converted description : /// @description dt_alarm( "Seconds" );/// @function dt_alarm
+/// @param  "Seconds"
+
+Converting GML script : ${project_dir}\scripts\dt_count_to_zero\dt_count_to_zero.gml
+Converted description : /// @description dt_count_to_zero( value, increment );/// @function dt_count_to_zero
+/// @param  value
+/// @param  increment
+
+Converting GML script : ${project_dir}\scripts\dt_angle_clamp\dt_angle_clamp.gml
+Converted description : /// @description  dt_angle_clamp( angle, arcangle, arcwidth )/// @function  dt_angle_clamp
+/// @param  angle
+/// @param  arcangle
+/// @param  arcwidth
+
+Converting GML script : ${project_dir}\scripts\dt_rotate_to\dt_rotate_to.gml
+Converted description : /// @description dt_rotate_to(current angle, goal angle, speed);/// @function dt_rotate_to
+/// @param current angle
+/// @param  goal angle
+/// @param  speed
+
+Converting GML script : ${project_dir}\scripts\dt_rect_outline_width\dt_rect_outline_width.gml
+Converted description : /// @description dt_rect_outline_width(x1, y1, x2, y2, width);/// @function dt_rect_outline_width
+/// @param x1
+/// @param  y1
+/// @param  x2
+/// @param  y2
+/// @param  width
+
+Converting GML script : ${project_dir}\scripts\dt_on_line\dt_on_line.gml
+Converted description : /// @description dt_on_line(x1,y1,x2,y2,x,y);/// @function dt_on_line
+/// @param x1
+/// @param y1
+/// @param x2
+/// @param y2
+/// @param x
+/// @param y
+
+Converting GML script : ${project_dir}\scripts\dt_in_view\dt_in_view.gml
+Converted builtin : line 26 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 26 : view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin : line 27 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 27 : view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin : line 26 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 27 : view_hview -> __view_get( e__VW.HView, 0 )
+Converted description : /// @description dt_in_view( id, ...hborder, ..vborder );/// @function dt_in_view
+/// @param  id
+/// @param  ...hborder
+/// @param  ..vborder
+
+Converting GML script : ${project_dir}\scripts\dt_clock\dt_clock.gml
+Converted description : /// @description dt_clock(time, measure, clamp)/// @function dt_clock
+/// @param time
+/// @param  measure
+/// @param  clamp
+
+Converting GML script : ${project_dir}\objects\dt_obj_debug\Create_0.gml
+Converted description : /// @description Initaite values
+
+Converting GML script : ${project_dir}\objects\dt_obj_debug\Step_0.gml
+Converted description : /// @description Game Debug Values    
+
+Converting GML script : ${project_dir}\objects\dt_obj_debug\Draw_64.gml
+Converted description : /// @description Debug Mode
+
+Font fnt_debug_font has been converted to font family Arial (Bold). Font has been regenerated, small inconsistencies may occur.
+Converting GML script : ${project_dir}\objects\dt_obj_timer\Step_0.gml
+Converted description : /// @description Process Globals
+
+added compatibility script view/__view_get.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+updated compatibility script __global_object_depths.gml
