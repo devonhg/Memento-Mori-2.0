@@ -15,7 +15,7 @@ if( keyboard_check_pressed( vk_space ) ){ state_open = !state_open; }
 		if( state_open ){
 			y_dest = y_at_fraction( 4 );
 		}else{
-			y_dest = y_at_fraction( -6 );
+			y_dest = y_at_fraction( -8 );
 		}	
 	}
 

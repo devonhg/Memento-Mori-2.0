@@ -24,8 +24,6 @@
 
 var _button = instance_create_layer( _xx, _yy, _layer, vw_button );
 
-		show_message( string( _layer ) );
-
 #region //Assign Values
 
 	_button.call_script = _call_script;

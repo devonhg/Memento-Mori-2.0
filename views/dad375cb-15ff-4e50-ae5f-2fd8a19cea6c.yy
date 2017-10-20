@@ -7,7 +7,9 @@
         "b6ff6e06-21ff-406a-b76d-87aebfed4f53",
         "9480da98-77b0-43db-9cee-208c85ee0f4b",
         "9571f81e-a15c-43dd-8f57-e83ee3c87129",
-        "754b4b79-afe3-4834-a58c-d6a96d8b4749"
+        "754b4b79-afe3-4834-a58c-d6a96d8b4749",
+        "bb474452-858d-4c24-bd0e-01d77fee0399",
+        "1b821a37-265d-4e52-a78d-fcd1de8d78e2"
     ],
     "filterType": "GMScript",
     "folderName": "Button Scripts",

@@ -13,6 +13,7 @@ var _layer = argument[0];
 var _bottom_drawer = argument[1]; 
 var _name = argument[2]; 
 var _exists = false
+var _btn = -1; 
 
 #region //Check if drawer exists
 
@@ -29,7 +30,7 @@ var _exists = false
 
 #endregion
 
-#region
+#region //Create the drawer and Button
 	if( !_exists ){
 		var drawer = instance_create_layer( 0,0, _layer, vw_drawer );
 
@@ -38,7 +39,8 @@ var _exists = false
 		drawer.bottom_drawer = _bottom_drawer;
 		drawer.name = _name;
 		
-		var btn = scr_add_sprite_button( 100,100, spr_drawer_btn, scr_btn_test, _layer, drawer );
+		btn = scr_add_sprite_button( 0, 500, spr_drawer_btn, scr_btu_drawer_state, _layer, drawer );
+		
 		btn.depth = -20; 
 
 		return drawer; 

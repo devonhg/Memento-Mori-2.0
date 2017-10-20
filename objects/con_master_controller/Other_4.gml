@@ -12,7 +12,7 @@ if( room == rm_main ){
 	
 	
 	
-	scr_add_sprite_button( x_at_fraction(6), y_at_fraction(9), spr_drawer_btn, scr_btn_test, "Instances" ); 
+	//scr_add_sprite_button( x_at_fraction(6), y_at_fraction(9), spr_drawer_btn, scr_btn_test, "Instances" ); 
 	
 	
 	//Initiate our settings drawer

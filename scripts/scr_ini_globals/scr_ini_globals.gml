@@ -3,7 +3,7 @@
 */
 
 //deathdate is to be an array containing each date piece of the day of death. 
-global.version = "2.0.0";
+global.version = "2.1.0";
 global.version_rank = "Alpha";
 global.menu_open = false; 
 global.days_left = scr_calculate_days_left(); 
@@ -23,6 +23,9 @@ global.update_pms = -1;
 global.co_light_grey = make_colour_rgb(221, 221, 221);
 global.co_black = make_colour_rgb(0, 0, 0);
 global.co_dark_grey = make_colour_rgb(51, 51, 51);
+
+//Interface
+global.tray_open = false; 
 
 //Colors
 /*
