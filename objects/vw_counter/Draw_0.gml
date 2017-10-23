@@ -2,6 +2,9 @@
 //Declare Temporary Variables
 var _days_left = scr_calculate_days_left();
 var _day_plural = "days";
+var _black = global.co_black;
+
+draw_rectangle_color(0, y_at_fraction(1), x_at_fraction(12), y_at_fraction(3), _black, _black,_black,_black, false);
 
 //Set to singular if neccessary
 if( _days_left == 1 || _days_left == 1 ){
@@ -35,7 +38,7 @@ draw_set_alpha( 1 );
 
 dt_track( "Y_at", height_at_fraction(2) )
 
-draw_set_color( c_black );
+draw_set_color( global.co_light_grey );
     draw_set_font( fnt_main );
     /*
 	draw_text_ext_transformed( x, y-20, string( _days_left ), 0, 400, .25, .25, 0 );
@@ -44,8 +47,9 @@ draw_set_color( c_black );
 	*/
 	
 	//draw_sprite( spr_x, 0, room_width/2, room_height/2 ); 
-	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(2), string( _days_left ), height_at_fraction( 1 ), width_at_fraction( 11 ), c_black ); 
-	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(2.5), _days_text, height_at_fraction( .5 ), width_at_fraction( 11 ), c_black ); 
+	var _h_adj = 10; 
+	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(2)-_h_adj, string( _days_left ), height_at_fraction( 1 ), width_at_fraction( 11 ), global.co_light_grey ); 
+	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(2.5)-_h_adj, _days_text, height_at_fraction( .5 ), width_at_fraction( 11 ), global.co_light_grey ); 
 	
 	draw_set_font( fnt_debug_font ); 
     draw_set_font( -1 ); 
