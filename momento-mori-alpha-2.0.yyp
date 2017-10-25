@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "79b412b2-3750-4adb-bbbc-f73e540984e6",
+            "Value": {
+                "id": "b3dd8948-d058-46f9-8c9a-21e6dddcd366",
+                "resourcePath": "sounds\\snd_tick\\snd_tick.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "79b7ada9-ba77-43e3-a114-58eada979c57",
             "Value": {
                 "id": "a881f9b4-b0d2-439d-84bc-be234c8c8f5e",
@@ -671,6 +679,14 @@
             }
         },
         {
+            "Key": "c6da79fe-c567-4c0e-89b2-ceb94fbc36de",
+            "Value": {
+                "id": "937bfdce-d3e2-49c9-911a-99b202623309",
+                "resourcePath": "objects\\vw_pendulum\\vw_pendulum.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c81c0558-186f-4b30-9c33-e9bf04cf6c6d",
             "Value": {
                 "id": "be3a10d2-4001-46d6-a2c1-208667c19663",
@@ -700,6 +716,14 @@
                 "id": "58bc32a8-1a6d-4991-8e86-f53ffa91ab1a",
                 "resourcePath": "views\\d023b757-1726-4ba8-82d9-3d0ed2c39bf5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d078ff9b-6358-462b-bb36-e6a9cd1909b8",
+            "Value": {
+                "id": "84b3a921-f630-4c5c-90fc-29bfd2b4f07c",
+                "resourcePath": "sprites\\spr_pendulum\\spr_pendulum.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -780,6 +804,14 @@
                 "id": "d05347f4-bcbf-4a0d-a94d-3bb422f83173",
                 "resourcePath": "options\\android\\options_android.yy",
                 "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
+            "Key": "e4dae78b-5543-4a01-accc-2e35dcaf774c",
+            "Value": {
+                "id": "4379cd62-d1b4-4b93-a8dd-9dc9033e084a",
+                "resourcePath": "sounds\\snd_tock\\snd_tock.yy",
+                "resourceType": "GMSound"
             }
         },
         {
