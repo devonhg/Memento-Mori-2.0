@@ -1,0 +1,24 @@
+###Buttons
+
+	Buttons are created using one of two scripts.
+
+		scr_add_button( X, Y, Text, Width, Height, Box Color, Border Color, Text_Color, Border Width, Call Script, Layer, Height Adjust, *Parent )
+		Calling this script specifies a button and what script to call when the button is clicked/pressed. Optionally assign a parent
+		object and the button will lock its x/y positions realtive to the parent object.
+
+		scr_add_sprite_button( X, Y, Sprite, Call Script, Layer, *Parent)
+		Exactly the same as the other script, except you use a sprite instead of a generated button.
+		
+###Drawers
+
+	Drawers are used to add buttons and other elements in spaces outside of the screen that can be brought in when needed.
+	
+	Assigning a button to a drawer
+	
+		Simply set the "parent" argument of a button to the id of the drawer. The X/Y value will be the adjustment values. 
+		
+	Assigning an object to a drawer
+	
+		Call the script "scr_child_to_parent" in the end step event of an object and specify the id of the drawer, which can be
+		found using the scr_btn_find_drawer script. 
+

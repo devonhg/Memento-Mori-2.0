@@ -42,7 +42,7 @@ clk_tme = tme/room_speed;
 
 //This defines each measurement
 tme_mes[0] = string_delete(string(clk_tme mod 1) , 1, 2);
-tme_mes[1] = string(floor(clk_tme mod 60))+":";
+tme_mes[1] = string(floor(clk_tme mod 60))/*+":"*/;
 tme_mes[2] = string((clk_tme div 60) mod 60)+":";
 tme_mes[3] = string(((clk_tme/60) div 60) mod 99)+":";
 
@@ -61,5 +61,5 @@ for(i = array_length_1d(tme_mes)-1 ; i > 0  ; i--){
     }
 }
 
-return tme_mes[3]+tme_mes[2]+tme_mes[1]+tme_mes[0];
+return tme_mes[3]+tme_mes[2]+tme_mes[1]/*+tme_mes[0]*/;
 

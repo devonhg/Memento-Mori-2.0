@@ -10,7 +10,8 @@
         "6cdce74a-b008-470c-8f77-b3f8a5a26666",
         "f0fe4d6d-0ccc-488d-9c08-c816288339ed",
         "241f6b3f-fe62-4d41-9609-bd941c1f9ed5",
-        "2fdc39eb-5c30-445f-b459-7a6ddd5be4e5"
+        "2fdc39eb-5c30-445f-b459-7a6ddd5be4e5",
+        "518b03fe-b0b1-4693-9d2b-202538711a17"
     ],
     "filterType": "GMScript",
     "folderName": "Scaling",

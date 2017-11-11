@@ -1,6 +1,7 @@
 ///@param Layer the layer to make the drawer on
 ///@param Bottom Whether or not the drawer goes on the bottom or the top. 
 ///@param Name the name of the drawer
+///@param Description The description of the drawer
 /*
 	@description Initiate a drawer into the game. 
 	
@@ -14,18 +15,12 @@ var _bottom_drawer = argument[1];
 var _name = argument[2]; 
 var _exists = false
 var _btn = -1; 
+var _description = argument[3];
 
 #region //Check if drawer exists
 
-	if( instance_exists( vw_drawer ) ){
-		var i, obj;
-		for (i = 0; i < instance_number(vw_drawer); i += 1){
-			obj = instance_find(vw_drawer,i);
-			if( obj.name == _name ){
-				_exists = true; 
-				break; 
-			}
-		}
+	if( scr_btn_find_drawer( _name ) ){
+		_exists = true; 	
 	}
 
 #endregion
@@ -38,10 +33,20 @@ var _btn = -1;
 
 		drawer.bottom_drawer = _bottom_drawer;
 		drawer.name = _name;
+		drawer.description = _description; 
 		
-		btn = scr_add_sprite_button( 0, 500, spr_drawer_btn, scr_btu_drawer_state, _layer, drawer );
+		//Draw the button in the right place, based on positioning. 
+		if( _bottom_drawer ){
+			btn = scr_add_sprite_button( 0, -500, spr_drawer_btn, scr_btn_toggle_drawer, _layer, drawer );
+			btn.image_yscale = -.5; 
+			btn.image_xscale = .5; 
+		}else{		
+			btn = scr_add_sprite_button( 0, 500, spr_drawer_btn, scr_btn_toggle_drawer, _layer, drawer );
+			btn.image_yscale = .5; 
+			btn.image_xscale = .5; 
+		}
 		
-		btn.depth = -20; 
+		btn.depth -= 1; 
 
 		return drawer; 
 	}else return -1; 

@@ -2,7 +2,7 @@
 ///@param X The x position of the text
 ///@param Y The y position of the text
 ///@param Text The string position of the text
-///@param height_scale The height in pixels to scale the text to
+///@param height The height in pixels to scale the text to
 ///@param width The width in pixels to restrain the text to
 ///@param color The colorof the text
 

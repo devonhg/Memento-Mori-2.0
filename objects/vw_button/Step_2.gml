@@ -1,16 +1,16 @@
 /// @description Object Parenting
 
-//scr_track(  );
+if( !destroyed ){
 
-#region //Object Parenting
+	#region //Object Parenting
 
-	if( parent_object ){
-		x = parent_object.x + XX;
-		y = parent_object.y + YY;
-		
-	}else{
-		x = XX;
-		y = YY;
-	}
+		if( parent_object ){
+			scr_child_to_parent( XX, YY, parent_object );
+		}else{
+			x = XX;
+			y = YY;
+		}
 
-#endregion
+	#endregion
+
+}

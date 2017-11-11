@@ -23,4 +23,6 @@
 	
 	parent_object = -1; 
 	
+	destroyed = false; 
+	
 #endregion
