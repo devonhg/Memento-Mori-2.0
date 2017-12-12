@@ -3,7 +3,7 @@
 
 
 
-draw_box_scaled( x, y, width_at_fraction(12), height_at_fraction(12), global.co_dark_grey, global.co_light_grey, 4 ); 
+draw_box_scaled( x, y, width_at_fraction(13), height_at_fraction(12), global.co_dark_grey, global.co_light_grey, 4 ); 
 
 draw_set_font( fnt_main );
 	draw_set_halign( fa_center );

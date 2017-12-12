@@ -7,7 +7,9 @@ var _w = width_at_fraction( 11 );
 var _h = height_at_fraction( 11 );
 
 //Draw main box
+draw_rectangle_color( _x - 4, _y - 4, _x + _w + 4, _y + _h + 4, global.co_black,global.co_black,global.co_black,global.co_black, false );
 draw_rectangle_color( _x, _y, _x + _w, _y + _h, global.co_light_grey,global.co_light_grey,global.co_light_grey,global.co_light_grey, false );
+
 
 draw_set_font( fnt_main );
 	draw_set_halign( fa_center );

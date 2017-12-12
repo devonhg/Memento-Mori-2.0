@@ -3,6 +3,7 @@
 
 var c = camera_get_active()
 
+/*
 dt_track( "Window_Width", window_get_width() );
 dt_track( "Window_Height", window_get_height() );
 dt_track( "Camera_Width", camera_get_view_width(view_camera[0]) );
@@ -12,7 +13,7 @@ dt_track( "Display_Height", display_get_height() );
 dt_track( "Ratio", ratio );
 dt_track( "Mouse_x", mouse_x );
 dt_track( "Mouse_y", mouse_y );
-
+*/
 
 #region//Enable debug on click
 	/*

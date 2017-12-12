@@ -10,6 +10,7 @@
 	//popup_layer = "";
 	script = -1;
 	destroy = false; 
+	delay = 0; 
 	
 #endregion
 

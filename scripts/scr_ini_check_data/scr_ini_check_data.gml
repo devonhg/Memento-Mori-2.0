@@ -1,4 +1,4 @@
-ini_open("save_data.ini");
+ini_open(global.db);
 
 if( ini_key_exists( "death_date", "year" ) ){
     global.first_run = false; 
@@ -12,14 +12,14 @@ if( ini_key_exists( "death_date", "year" ) ){
     ini_write_real(  "death_date", "year", _year );
     ini_write_real(  "death_date", "month", _month );
     ini_write_real(  "death_date", "day", _day );
-    ini_write_string(  "mission", "pms", "Enter your Personal Mission Statement" );
-    ini_write_string(  "Quotes", "qod", "" );
+    //ini_write_string(  "mission", "pms", "Enter your Personal Mission Statement" );
+    //ini_write_string(  "Quotes", "qod", "" );
 }
 
-global.deathdate[0] = ini_read_real( "death_date", "year", 2026 );//Year
-global.deathdate[1] = ini_read_real( "death_date", "month", 11 );//Month
-global.deathdate[2] = ini_read_real("death_date", "day", 9 );//Day
-global.pms = ini_read_string("mission", "pms", "Enter your Personal Mission Statement" );
+scr_md_refresh_dd(); 
+//global.pms = ini_read_string("mission", "pms", "Enter your Personal Mission Statement" );
 global.qod = ini_read_string( "Quotes", "qod", "" );
+
+scr_md_set_dd(scr_md_get_dd());
 
 ini_close(); 

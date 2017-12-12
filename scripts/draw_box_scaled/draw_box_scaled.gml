@@ -1,8 +1,8 @@
 ///@description Draws a box at an x/y coordinate at a specific height and scale, returns x/y pair. 
 ///@param x
 ///@param y
-///@param width The width, based on a scale value ( 1 - 12 )
-///@param height The height, based on a scale value ( 1 - 12 )
+///@param width The width
+///@param height The height
 ///@param center_color
 ///@param border_color
 ///@param border_width
@@ -23,8 +23,8 @@
 	//var b_w = b_w_v * scrn_w;//Box width in pixels
 
 //Declare sub values
-	var b_w_h = b_w/2;//Box width half
-	var b_h_h = b_h/2;//Box height half
+	var b_w_h = ceil(b_w/2);//Box width half
+	var b_h_h = ceil(b_h/2);//Box height half
 	var bo_h = bo_w/2;//Border half
 
 //Draw the rectangles

@@ -25,4 +25,8 @@
 	
 	destroyed = false; 
 	
+	height = -1; 
+	
 #endregion
+
+depth -= 10; 

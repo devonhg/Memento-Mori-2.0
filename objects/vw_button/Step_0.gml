@@ -45,6 +45,12 @@ if( !destroyed ){
 		}else{
 
 			if( sprite_index != sprite ) sprite_index = sprite; 
+			
+			if( height != -1 ){
+				var _scale = scr_get_scale( sprite_get_width(sprite_index), sprite_get_height(sprite_index), height );
+				image_xscale = _scale[0];
+				image_yscale = _scale[1];  
+			}
 
 			if( _can_click  ){ 
 

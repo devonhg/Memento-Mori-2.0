@@ -1,1 +1,0 @@
-scr_create_popup( "Meditate", "Meditate during this time.", "This is content for meditation", "PopUps" );

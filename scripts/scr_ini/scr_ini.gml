@@ -3,7 +3,11 @@
 	randomize(); 
 	
 //Call ini scripts
+	global.db = "database.ini";//Local database
+	global.qdb = "quotes.ini";//Quotes database
+	global.new_day = false;//New Day
 	scr_ini_check_data(); 
+	scr_ini_check_day();
 	scr_ini_globals(); 
 
 //Initiate controllers

@@ -20,3 +20,11 @@ To Test them, next time I sit down I'm going to do the following:
 To accomplish this, in the create drawer script a button will be created childed
 to the created drawer. This will then be the "up" or "down arrow" based on what kind of 
 drawer it is
+
+10/18/2017
+Currently implementing the day changing mechanic, as well as refining how data is handled. 
+
+12/11/2017
+Implemented the ability to check and run specific scripts if it's a new day, both immediate and delayed.
+The delayed variants are good for notifications, while the immediate are good for setting things up.
+( For instance, picking a new quote of the day )

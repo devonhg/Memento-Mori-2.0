@@ -23,5 +23,7 @@ if( game_debug_mode ){
 	draw_set_valign( fa_top );
 	draw_set_halign( fa_left );
 	draw_set_font( fnt_debug_font );
+	
+
 
 }

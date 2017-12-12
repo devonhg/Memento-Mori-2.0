@@ -11,7 +11,7 @@ var _str_height = string_height(argument[2]);
 var _scale = argument[3]/_str_height;
 var _sep = _str_height;
 
-dt_track( "Text Width", string( argument[4] ) );
+//dt_track( "Text Width", string( argument[4] ) );
 
 draw_text_ext_transformed_color( 
 	argument[0], 

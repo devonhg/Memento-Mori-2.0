@@ -1,24 +1,69 @@
-###Buttons
+##Model
 
-	Buttons are created using one of two scripts.
-
-		scr_add_button( X, Y, Text, Width, Height, Box Color, Border Color, Text_Color, Border Width, Call Script, Layer, Height Adjust, *Parent )
-		Calling this script specifies a button and what script to call when the button is clicked/pressed. Optionally assign a parent
-		object and the button will lock its x/y positions realtive to the parent object.
-
-		scr_add_sprite_button( X, Y, Sprite, Call Script, Layer, *Parent)
-		Exactly the same as the other script, except you use a sprite instead of a generated button.
+	###Death Date
+	
+		The death date is what runs the entire app, and is what's stored locally on the phone. There are a few scripts available
+		to manipulate the death date. 
 		
-###Drawers
-
-	Drawers are used to add buttons and other elements in spaces outside of the screen that can be brought in when needed.
-	
-	Assigning a button to a drawer
-	
-		Simply set the "parent" argument of a button to the id of the drawer. The X/Y value will be the adjustment values. 
+			scr_calculate_days_left - Returns the exact number of days until the coming death day. 
 		
-	Assigning an object to a drawer
+			*scr_md_set_dd - Give this script a date to update the death day to, it updates the database(ini) to the set death day. Leave
+			empty to return the current death day. 
+			
+	###Quote Of The Day
 	
-		Call the script "scr_child_to_parent" in the end step event of an object and specify the id of the drawer, which can be
-		found using the scr_btn_find_drawer script. 
+		Every day the app generates a new quote of the day from it's local database if no connection is found, otherwise pulls
+		from the database on Knack. 
+			
+			*scr_add_qod - Add a quote of the day to the local database. 
+			
+			*scr_reset_qod - Reset the quote of the day to a new quote.
+			
+			*scr_get_qod - Get the current quote of the day, if offline it pulls a quote from the local database. If online it 
+			takes the online qod from knack and adds it to the local database and expands it. 
 
+
+##View
+
+	###Buttons
+
+		Buttons are created using one of two scripts.
+
+			scr_add_button( X, Y, Text, Width, Height, Box Color, Border Color, Text_Color, Border Width, Call Script, Layer, Height Adjust, *Parent )
+			Calling this script specifies a button and what script to call when the button is clicked/pressed. Optionally assign a parent
+			object and the button will lock its x/y positions realtive to the parent object. This is useful for drawers or popups
+
+			scr_add_sprite_button( X, Y, Sprite, Call Script, Layer, *Parent)
+			Exactly the same as the other script, except you use a sprite instead of a generated button.
+	
+	---
+	
+	###Drawers
+
+		Drawers are used to add buttons and other elements in spaces outside of the screen that can be brought in when needed.
+	
+			Assigning a button to a drawer
+	
+				Simply set the "parent" argument of a button to the id of the drawer. The X/Y value will be the adjustment values 
+				instead of being absolute x and values. 
+		
+			Assigning an object to a drawer
+	
+				Call the script "scr_child_to_parent" in the end step event of an object and specify the id of the drawer, which can be
+				found using the scr_btn_find_drawer script. 
+
+	---
+	
+	###Popups
+
+		Popups are boxes that can display a specific payload of information. These are useful for an additional interactive layer
+		past a drawer and promotional pieces. 
+	
+			scr_create_popup - Calls a popup, and is immediately displayed. Will not run if there is already a popup running. 
+	
+			scr_is_popup_open - Will return true if there is a popup running, false if not. 
+	
+			scr_cose_popup - Will close a popup, can be used to programmically close a popup under other circumstances beyond the "close"
+			button. 
+	
+	
