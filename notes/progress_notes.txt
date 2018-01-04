@@ -28,3 +28,12 @@ Currently implementing the day changing mechanic, as well as refining how data i
 Implemented the ability to check and run specific scripts if it's a new day, both immediate and delayed.
 The delayed variants are good for notifications, while the immediate are good for setting things up.
 ( For instance, picking a new quote of the day )
+
+12/14/2017
+Couple of facets on the database:
+A function to pull all the quotes from the local database ( returns 2d array )
+A function to pull all the quotes from the AT datbase ( returns 2d array ) -done
+A function to merge two two dimensional arrays 
+A function to take a two dimensional array and plop it into the local database, updating it.
+A function to pick a quote of the day from the local database
+A function to update the local database from a 2d array. 

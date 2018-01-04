@@ -20,6 +20,7 @@ global.update_year = -1;
 global.update_pms = -1;
 */
 global.update_dd = -1; 
+//global.http_request = -1; 
 
 
 global.co_light_grey = make_colour_rgb(221, 221, 221);

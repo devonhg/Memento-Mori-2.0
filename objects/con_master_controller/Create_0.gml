@@ -1,11 +1,12 @@
-/// @description Insert description here
+/// @description Opening Logic
+// You can write your code in this editor
 
-//alarm[0] = 1;
- 
+#region//Check if new day, run new day delayed if so. 
+	if( global.new_day == true ){
+		vw_on_new_day();
+		
+		var _sec = 3;//Number of seconds to delay the new day delayed script
+		alarm[0] = room_speed * _sec; 
 
-ratio = 0; 
-/*
-show_message( scr_calculate_days_left() ); 
-
-*/
-
+	}
+#endregion

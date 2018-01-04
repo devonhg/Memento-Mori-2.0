@@ -32,6 +32,10 @@ vw_timer - the timer used in the meditation portion of the app
 MODEL
 global.quote_database = a database containing the library of quotes
 global.death_day = a date object containing the death day for the user
+*************ALL THATS GOING BY BY
+
+The quote of the day is the only thing the app will need, and it will be retreived from the
+bymorte quotes api. 
 
 Systems : 
 

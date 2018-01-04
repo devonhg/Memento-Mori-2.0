@@ -12,14 +12,13 @@ if( ini_key_exists( "death_date", "year" ) ){
     ini_write_real(  "death_date", "year", _year );
     ini_write_real(  "death_date", "month", _month );
     ini_write_real(  "death_date", "day", _day );
-    //ini_write_string(  "mission", "pms", "Enter your Personal Mission Statement" );
-    //ini_write_string(  "Quotes", "qod", "" );
 }
 
 scr_md_refresh_dd(); 
-//global.pms = ini_read_string("mission", "pms", "Enter your Personal Mission Statement" );
-global.qod = ini_read_string( "Quotes", "qod", "" );
+//global.qod = ini_read_string( "Quotes", "qod", "" );
 
 scr_md_set_dd(scr_md_get_dd());
 
 ini_close(); 
+
+scr_call_bymorte_qotd(); 

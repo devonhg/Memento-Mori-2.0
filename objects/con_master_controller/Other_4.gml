@@ -1,29 +1,23 @@
-/// @description Initiate full window script
+/// @description Initiate Objects and Window Script
 
-scr_fullwindow( 1000 );
+scr_fullwindow( 1000 );//Configure the screen dimensions
 
-/// @description Initiate objects
-
-#region //Main Room 
+#region Main Room 
 	if( room == rm_main ){
 		//Adjuster
 			var _adjust = 1; 
 			var _drawer_btn_width = width_at_fraction(10);
-			var _drawer_btn_height = height_at_fraction(1);
-			
-			//scr_md_set_dd( "11/9/2017" ); 
-			
+			var _drawer_btn_height = height_at_fraction(1);			
 			
 		//Populate main objects
 			instance_create_layer( x_at_fraction(6), y_at_fraction(3), "Instances_Overlay", vw_counter );
 			instance_create_layer( x_at_fraction(6), y_at_fraction(10), "Instances", vw_pendulum );
 			instance_create_layer( x_at_fraction(6), y_at_fraction(.8), "Instances_Overlay", vw_top_menu );
 			instance_create_layer( x_at_fraction(6), y_at_fraction(.5), "Instances", md_data_async );
-			instance_create_layer( x_at_fraction(6), y_at_fraction(.5), "Instances", vw_notices); 
+			//instance_create_layer( x_at_fraction(6), y_at_fraction(.5), "Instances", vw_notices); 
 
 		//Populate Main Buttons
 			scr_add_button( x_at_fraction(6), y_at_fraction(11), "Meditate", width_at_fraction(8), height_at_fraction(1), global.co_light_grey, global.co_black, global.co_black, 4, scr_call_meditate, "Instances", 6 ); 
-	
 	
 		//Initiate our settings drawer
 			var _drwer_settings = scr_drawer( "Drawers", false, "Settings", "Tweak the app to your liking." );

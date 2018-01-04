@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1041cc0f-a921-4c07-b5e9-fedcf5e5ed4e",
+            "Value": {
+                "id": "83209b5d-b9e3-474e-b06e-676b6c73f850",
+                "resourcePath": "scripts\\scr_get_at_db\\scr_get_at_db.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "10aad04d-2cdd-4546-9df6-68d3918a1388",
             "Value": {
                 "id": "02c73fff-9377-4c52-b17e-4db8f3ed8d6c",
@@ -132,6 +140,14 @@
                 "id": "6d529cbb-63aa-4952-b1a2-08ac56240c86",
                 "resourcePath": "fonts\\fnt_main_font\\fnt_main_font.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "12911c9c-ebeb-4527-84b1-62ae70229ac8",
+            "Value": {
+                "id": "6289d6f3-f083-4ba1-8eb5-420a7491c977",
+                "resourcePath": "scripts\\scr_update_local_db\\scr_update_local_db.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -172,6 +188,14 @@
                 "id": "3ba78cef-56b1-4426-9a3c-41146122b4b9",
                 "resourcePath": "views\\151a6acd-85d7-4499-9f14-81d196aa301a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1581b27a-3625-4483-b32d-b2ff680f6539",
+            "Value": {
+                "id": "64bbb93d-91c6-4e6c-a6a6-48723da45086",
+                "resourcePath": "scripts\\scr_call_at_db\\scr_call_at_db.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -348,6 +372,14 @@
                 "id": "5c5b12e1-b4ec-486f-a913-3638848faba1",
                 "resourcePath": "views\\35004e03-c734-4e89-bc8d-5ce43ba389ab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "355db09f-52bd-4a22-a8c4-98b117178ac1",
+            "Value": {
+                "id": "41d2b17c-900e-4873-aa98-22ef93d295c4",
+                "resourcePath": "scripts\\scr_ini_qod\\scr_ini_qod.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1071,6 +1103,14 @@
             }
         },
         {
+            "Key": "c4417660-ab38-47fb-8501-88f8cfdf9322",
+            "Value": {
+                "id": "e3698ccf-04cf-4c23-87d8-d6172961a882",
+                "resourcePath": "scripts\\scr_call_bymorte_qotd\\scr_call_bymorte_qotd.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c6da79fe-c567-4c0e-89b2-ceb94fbc36de",
             "Value": {
                 "id": "937bfdce-d3e2-49c9-911a-99b202623309",
@@ -1420,6 +1460,11 @@
         "996d0d97-0599-494b-bb1f-198d5bc69cc3",
         "4644c763-27e5-40f6-8176-00730527a639",
         "66f51bbb-515e-4844-8f0e-691e8aad21a4",
+        "355db09f-52bd-4a22-a8c4-98b117178ac1",
+        "1581b27a-3625-4483-b32d-b2ff680f6539",
+        "1041cc0f-a921-4c07-b5e9-fedcf5e5ed4e",
+        "12911c9c-ebeb-4527-84b1-62ae70229ac8",
+        "c4417660-ab38-47fb-8501-88f8cfdf9322",
         "6caf6d1d-6157-4d77-b836-19d52a9e26a4",
         "9304bca6-f85c-4101-89e9-414b0b93db28",
         "7544b3c9-2257-41cd-8a55-2f253aa21eae",
