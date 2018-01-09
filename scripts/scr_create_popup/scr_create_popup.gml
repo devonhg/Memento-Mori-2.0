@@ -5,6 +5,9 @@
 ///@param Layer The layer to put the popup on
 ///@param *Yes-Text The text for the yes button
 ///@param *Script The script to run should "yes" be hit.
+///@param *Argument1 Argument to pass to the script
+///@param *Argument2 Argument to pass to the script
+
 
 if( !instance_exists( vw_popup ) ){
 	#region//Initiate Variables
@@ -15,15 +18,17 @@ if( !instance_exists( vw_popup ) ){
 		var _layer = argument[3];
 		var _yes_text = -1;
 		var _yes_script = -1; 
+		var _argument = -1;
+		//var _argument_2 = -1;
 	
-		if( argument_count > 4 ){
-			
-			_yes_text = argument[4]	
-			
-		}if( argument_count > 5 ){
-			_yes_script = argument[5]; 
-		}	
 	
+		var _ind = 4;
+		if( argument_count > _ind ){ _yes_text = argument[_ind]	}
+		_ind++; 
+		if( argument_count > _ind ){ _yes_script = argument[_ind]; }	
+		_ind++;
+		if( argument_count > _ind ){ _argument = argument[_ind] }	
+		
 		var _popup = instance_create_layer( 0,0, _layer, vw_popup );
 	
 	#endregion
@@ -40,25 +45,18 @@ if( !instance_exists( vw_popup ) ){
 
 	#region//Create buttons
 		
-		var _close_button = scr_add_button( 
+		var _close_button = scr_add_primary_button(
 			x_at_fraction(6), 
-			y_at_fraction(10.5), 
-			"Close", 
-			width_at_fraction( 8 ), 
-			height_at_fraction( 1 ), 
-			global.co_light_grey,
-			global.co_dark_grey,
-			global.co_dark_grey,
-			6,
+			y_at_fraction(10.5),
+			"Close",
 			scr_close_popup,
-			_layer,
-			10,
+			0,
 			_popup
-		);
-		_close_button.depth -= 1; 
+		)
 		
 		if( _yes_text != -1 && _yes_script != -1 ){
 			
+			/*
 			var _action_button = scr_add_button( 
 				x_at_fraction(6), 
 				y_at_fraction(9.0), 
@@ -72,9 +70,22 @@ if( !instance_exists( vw_popup ) ){
 				_yes_script,
 				_layer,
 				10,
-				_popup
+				_popup,
+				_argument//,
+				//_argument_2
 			);
 			_action_button.depth -= 1; 
+			*/
+			var _action_button = scr_add_primary_button(
+				x_at_fraction(6), 
+				y_at_fraction(9.0), 
+				_yes_text, 
+				_yes_script,
+				0,
+				_popup,
+				_argument
+			)
+			
 
 		}
 		

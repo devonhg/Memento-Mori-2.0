@@ -38,7 +38,7 @@ if( !destroyed ){
 				_adj = height_at_fraction( text_adj );
 
 				if( point_in_rectangle_scaled(mouse_x, mouse_y, x, y, WW, HH) && script_exists( call_script ) && mouse_check_button_pressed( mb_left ) ){
-					script_execute( call_script, parent_object, id );
+					script_execute( call_script, parent_object, id, argument_1);
 				}
 			}
 	
@@ -55,7 +55,7 @@ if( !destroyed ){
 			if( _can_click  ){ 
 
 				if( position_meeting( mouse_x, mouse_y, id ) && script_exists( call_script ) && mouse_check_button_pressed( mb_left ) ){
-					script_execute( call_script, parent_object, id );
+					script_execute( call_script, parent_object, id, argument_1 );
 				}
 			}
 	

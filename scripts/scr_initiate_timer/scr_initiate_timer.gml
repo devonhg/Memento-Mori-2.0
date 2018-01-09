@@ -7,5 +7,6 @@ var _tmr = instance_create_layer( x_at_fraction( 6 ), y_at_fraction(6), "PopUps"
 	_tmr.depth -= 1; 
 	_tmr.minutes = _t; 
 
-var _play_pause = scr_add_button( x_at_fraction(6), y_at_fraction(9), "Start/Stop", width_at_fraction(8), height_at_fraction(1), global.co_black, global.co_black, global.co_light_grey, 4, scr_btn_med_play, "PopUps", 6, _pu );
-	_play_pause.depth -=1; 
+//var _play_pause = scr_add_button( x_at_fraction(6), y_at_fraction(9), "Start/Stop", width_at_fraction(8), height_at_fraction(1), global.co_black, global.co_black, global.co_light_grey, 4, scr_btn_med_play, "PopUps", 6, _pu );
+//	_play_pause.depth -=1; 
+scr_add_primary_button(x_at_fraction(6), y_at_fraction(9), "start/stop", scr_btn_med_play, 0, _pu);

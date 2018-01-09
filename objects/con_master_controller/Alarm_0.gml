@@ -1,2 +1,2 @@
 /// @description On New Day Delayed
-vw_on_new_day_delayed();
+vw_btn_call_qotd(); 

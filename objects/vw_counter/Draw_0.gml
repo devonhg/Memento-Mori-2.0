@@ -30,33 +30,13 @@ _days_left = abs( _days_left );
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-/*
-draw_set_alpha( .8 );
-draw_rectangle_colour(view_xview[0], y - 30, view_xview[0] + view_wview[0], y + 45, c_white, c_white, c_gray, c_gray, 0);
-draw_set_alpha( 1 );
-*/
-
-//show_message( camera_get_view_width(view_camera[0]) )
-
-//draw_line_color( 0, room_height/3, room_width/2, room_height/3, c_green, c_green )
-
 dt_track( "Y_at", height_at_fraction(2) )
 
 draw_set_color( global.co_light_grey );
     draw_set_font( fnt_main );
-    /*
-	draw_text_ext_transformed( x, y-20, string( _days_left ), 0, 400, .25, .25, 0 );
-    draw_text_ext_transformed( x, y + 10, _days_text, 0, 700, .1, .1, 0 );
-    draw_text_ext_transformed( x, y + 28, "Death Day : " + string(global.deathdate[1])+"/"+string(global.deathdate[2])+"/"+string(global.deathdate[0]), 0, 1200, .05, .05, 0 );
-	*/
 	
 	//draw_sprite( spr_x, 0, room_width/2, room_height/2 ); 
 	var _h_adj = -25; 
-	/*
-	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(2)+_h_adj, string( _days_left ), height_at_fraction( 1 ), width_at_fraction( 11 ), global.co_light_grey ); 
-	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(2.5)+_h_adj, _days_text, height_at_fraction( .5 ), width_at_fraction( 11 ), global.co_light_grey ); 
-	text_at_fraction( x_at_fraction( 6 ), y_at_fraction(3)+_h_adj, _death_day, height_at_fraction( .4 ), width_at_fraction( 11 ), global.co_light_grey ); 
-	*/
 	text_at_fraction( x, y+_h_adj, string( _days_left ), height_at_fraction( 1 ), width_at_fraction( 11 ), global.co_light_grey ); 
 	text_at_fraction( x, y+height_at_fraction(.5)+_h_adj, _days_text, height_at_fraction( .5 ), width_at_fraction( 11 ), global.co_light_grey ); 
 	text_at_fraction( x, y+height_at_fraction(1)+_h_adj, _death_day, height_at_fraction( .4 ), width_at_fraction( 11 ), global.co_light_grey ); 

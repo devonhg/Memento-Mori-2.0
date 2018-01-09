@@ -5,16 +5,6 @@
     "name": "vw_counter",
     "eventList": [
         {
-            "id": "e7a19796-ebc4-4db0-ab7b-f784d0b0609b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "b547e0bb-b0f0-40c4-93bb-c818073f666b"
-        },
-        {
             "id": "3e050258-3fcd-49a7-86c2-171db65f57a0",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -36,6 +26,7 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -50,6 +41,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

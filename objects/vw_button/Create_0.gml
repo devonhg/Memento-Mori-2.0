@@ -8,9 +8,10 @@
 	WW = 8; 
 	HH = 1; 
 
-	col_in = global.co_light_grey;
-	col_out = global.co_black;
-	col_text = global.co_black;
+	col_in = global.co_sec;
+	col_out = global.co_prim;
+	col_text = global.co_prim;
+	col_acc = global.co_sec;
 
 	line_width = 4; 
 
@@ -26,6 +27,13 @@
 	destroyed = false; 
 	
 	height = -1; 
+	
+	argument_1 = -1;
+	
+	btn_type = 0;
+		//0 = Primary
+		//1 = Secondary
+		//2 = Tertiary
 	
 #endregion
 

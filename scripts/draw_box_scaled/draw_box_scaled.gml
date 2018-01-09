@@ -6,6 +6,7 @@
 ///@param center_color
 ///@param border_color
 ///@param border_width
+///@param *accent color
 
 //Declare main values
 	//Coordinates
@@ -18,9 +19,14 @@
 	var ba_c = argument[4];//Background color
 	var bo_c = argument[5];//Border color
 	var bo_w = argument[6];//Border width
+	var bo_acc = -1;// Accent Color
 	//var cam = camera_get_active(); 
 	//var scrn_w = camera_get_view_width(cam);//Screen width
 	//var b_w = b_w_v * scrn_w;//Box width in pixels
+	
+	if( argument_count > 7 ){
+		bo_acc = argument[7]; 
+	}
 
 //Declare sub values
 	var b_w_h = ceil(b_w/2);//Box width half
@@ -36,6 +42,16 @@
 		YY + b_h_h, 
 		ba_c,ba_c,ba_c,ba_c,0
 	);
+	//Accent
+	if( bo_acc ){
+		draw_rectangle_color(
+			XX - b_w_h, 
+			YY + (b_h_h - (b_h_h/6)),
+			XX + b_w_h, 
+			YY + b_h_h, 
+			bo_acc,bo_acc,bo_acc,bo_acc,0
+		);		
+	}
 	//Border
 	var _xminus = ( XX - b_w_h );
 	var _yminus = ( YY - b_h_h );
