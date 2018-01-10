@@ -45,12 +45,12 @@ if( !instance_exists( vw_popup ) ){
 
 	#region//Create buttons
 		
-		var _close_button = scr_add_primary_button(
+		var _close_button = scr_add_button(
 			x_at_fraction(6), 
 			y_at_fraction(10.5),
 			"Close",
 			scr_close_popup,
-			0,
+			2,
 			_popup
 		)
 		
@@ -76,7 +76,7 @@ if( !instance_exists( vw_popup ) ){
 			);
 			_action_button.depth -= 1; 
 			*/
-			var _action_button = scr_add_primary_button(
+			var _action_button = scr_add_button(
 				x_at_fraction(6), 
 				y_at_fraction(9.0), 
 				_yes_text, 

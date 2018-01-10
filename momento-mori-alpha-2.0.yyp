@@ -402,7 +402,7 @@
             "Key": "37071682-417f-40b4-8ccc-cf35f871d362",
             "Value": {
                 "id": "9cf8cbe6-b2a8-47e1-acee-faf6b9789532",
-                "resourcePath": "scripts\\scr_add_primary_button\\scr_add_primary_button.yy",
+                "resourcePath": "scripts\\scr_add_button\\scr_add_button.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -460,6 +460,14 @@
                 "id": "068b2610-e031-40a4-8d35-871701d53288",
                 "resourcePath": "views\\46bdae07-a3cd-4ff4-a132-2efd75e2187f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "49f3c135-c4a2-4d7e-986a-8768021e8874",
+            "Value": {
+                "id": "c6f186bd-f427-48e4-aef6-9e711400449e",
+                "resourcePath": "fonts\\fnt_main_2\\fnt_main_2.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -935,6 +943,14 @@
             }
         },
         {
+            "Key": "9dbff37e-4306-43ad-bc15-a35bd4122b23",
+            "Value": {
+                "id": "d6dd17a9-2beb-482a-b0b8-02e903a79ef2",
+                "resourcePath": "scripts\\scr_close_all_drawers\\scr_close_all_drawers.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e9c21d3-3e4d-4d37-927c-de7a8db027c6",
             "Value": {
                 "id": "d2e9c2c3-89de-49c8-8c66-f0b5c8798419",
@@ -1068,6 +1084,14 @@
                 "id": "0b06f44b-fb9b-4e3b-a0b1-0b19b0bc4102",
                 "resourcePath": "views\\b14cef09-ba56-43a6-8070-6bffaf0bcf14.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b2bf3175-d435-4297-b3c7-4b45f351c2c8",
+            "Value": {
+                "id": "a8d9cd6b-91a0-4182-b138-69a0f40eb171",
+                "resourcePath": "datafiles_yy\\TCM_____.TTF.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1545,6 +1569,7 @@
         "bb474452-858d-4c24-bd0e-01d77fee0399",
         "1b821a37-265d-4e52-a78d-fcd1de8d78e2",
         "d8423857-048f-458c-90f1-59e6a55abf93",
+        "9dbff37e-4306-43ad-bc15-a35bd4122b23",
         "3447d12a-b3b6-47a2-a26f-73d4ce7675ed",
         "a397de18-db0f-4b15-baa9-f0b44e481b5d",
         "43953f24-6356-472c-ae88-67a75351c2a2",

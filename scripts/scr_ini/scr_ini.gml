@@ -6,7 +6,7 @@ var _cat = "INI";
 	
 #region Declare core globals
 	//App Specific
-		global.version = "2.2.3";
+		global.version = "2.2.4";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
 
@@ -20,6 +20,8 @@ var _cat = "INI";
 			global.qod[3] = "null";//3 = Link
 		global.qdb = -1;//Quote Database
 		global.qod = "";//The quote of the day
+		
+		global.font = fnt_main_2; 
 	
 	//Colors
 		global.co_light_grey = make_colour_rgb(221, 221, 221);
@@ -80,4 +82,4 @@ var _cat = "INI";
 
 
 //Initiate master controller	
-instance_create_depth( 0,0,0, con_master_controller );
+instance_create_depth( 0,0,450, con_master_controller );
