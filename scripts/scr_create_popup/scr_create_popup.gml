@@ -6,32 +6,33 @@
 ///@param *Yes-Text The text for the yes button
 ///@param *Script The script to run should "yes" be hit.
 ///@param *Argument1 Argument to pass to the script
-///@param *Argument2 Argument to pass to the script
+
+#region//Initiate Variables
+
+	var _title = argument[0];
+	var _subtitle = argument[1]; 
+	var _content = argument[2];
+	var _layer = argument[3];
+	var _yes_text = -1;
+	var _yes_script = -1; 
+	var _argument = -1;
+	
+	
+	var _ind = 4;
+	if( argument_count > _ind ){ _yes_text = argument[_ind]	}
+	_ind++; 
+	if( argument_count > _ind ){ _yes_script = argument[_ind]; }	
+	_ind++;
+	if( argument_count > _ind ){ _argument = argument[_ind] }	
+	
+
+	
+#endregion
 
 
 if( !instance_exists( vw_popup ) ){
-	#region//Initiate Variables
 
-		var _title = argument[0];
-		var _subtitle = argument[1]; 
-		var _content = argument[2];
-		var _layer = argument[3];
-		var _yes_text = -1;
-		var _yes_script = -1; 
-		var _argument = -1;
-		//var _argument_2 = -1;
-	
-	
-		var _ind = 4;
-		if( argument_count > _ind ){ _yes_text = argument[_ind]	}
-		_ind++; 
-		if( argument_count > _ind ){ _yes_script = argument[_ind]; }	
-		_ind++;
-		if( argument_count > _ind ){ _argument = argument[_ind] }	
-		
-		var _popup = instance_create_layer( 0,0, _layer, vw_popup );
-	
-	#endregion
+	var _popup = instance_create_layer( 0,0, _layer, vw_popup );
 
 	#region//Assign values
 
@@ -40,56 +41,28 @@ if( !instance_exists( vw_popup ) ){
 		_popup.content = _content;
 		_popup.yes_text = _yes_text;
 		_popup.script = _yes_script;
+		_popup.arg = _argument; 
 
-	#endregion
-
-	#region//Create buttons
-		
-		var _close_button = scr_add_button(
-			x_at_fraction(6), 
-			y_at_fraction(10.5),
-			"Close",
-			scr_close_popup,
-			2,
-			_popup
-		)
-		
-		if( _yes_text != -1 && _yes_script != -1 ){
-			
-			/*
-			var _action_button = scr_add_button( 
-				x_at_fraction(6), 
-				y_at_fraction(9.0), 
-				_yes_text, 
-				width_at_fraction( 8 ), 
-				height_at_fraction( 1 ), 
-				global.co_black,
-				global.co_dark_grey,
-				global.co_light_grey,
-				6,
-				_yes_script,
-				_layer,
-				10,
-				_popup,
-				_argument//,
-				//_argument_2
-			);
-			_action_button.depth -= 1; 
-			*/
-			var _action_button = scr_add_button(
-				x_at_fraction(6), 
-				y_at_fraction(9.0), 
-				_yes_text, 
-				_yes_script,
-				0,
-				_popup,
-				_argument
-			)
-			
-
-		}
-		
 	#endregion
 
 	return _popup;
+}else{
+	vw_popup.no_text = "Next"; 
+	if(!instance_exists(vw_popup_manager)) instance_create_depth(0,0,0,vw_popup_manager);
+	var i;
+	for( i = 0; i < 100; i++ ){
+		if( vw_popup_manager.popup_queue[i, 0] == "" ){
+			vw_popup_manager.popup_queue[i, 0] = _title;
+			vw_popup_manager.popup_queue[i, 1] = _subtitle;
+			vw_popup_manager.popup_queue[i, 2] = _content;
+			vw_popup_manager.popup_queue[i, 3] = _layer;
+			vw_popup_manager.popup_queue[i, 4] = _yes_text;
+			vw_popup_manager.popup_queue[i, 5] = _yes_script;
+			vw_popup_manager.popup_queue[i, 6] = _argument;
+			break; 
+		}
+	}
+	
+	
+	
 }

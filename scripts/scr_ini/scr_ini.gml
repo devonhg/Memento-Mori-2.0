@@ -6,7 +6,7 @@ var _cat = "INI";
 	
 #region Declare core globals
 	//App Specific
-		global.version = "2.2.4";
+		global.version = "2.2.5";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
 
@@ -35,6 +35,18 @@ var _cat = "INI";
 	//Async
 		global.http_async = -1; 
 		global.update_dd = -1; 
+		global.push_async = -1; 
+		global.wipe_data = -1; 
+		
+	//Options
+		global.notify_time = -1;//Defined when checking data; 
+		
+	//Tutorial	
+		global.tut_meditation = false;
+		global.tut_qotd = false; 
+		global.tut_menu = false; 
+		global.tut_settings = false; 
+		
 	
 	scr_debug_msg( _cat, "Core Globals Declared"  );
 #endregion
@@ -55,14 +67,10 @@ var _cat = "INI";
 	}
 
 	scr_md_refresh_dd(); 
-	//global.qod = ini_read_string( "Quotes", "qod", "" );
-
 	scr_md_set_dd(scr_md_get_dd());
-
 	ini_close(); 
-
 	scr_call_bymorte_qotd(); 
-	
+	global.first_run = true; //Testing, comment out otherwise
 	scr_debug_msg( _cat, "Data checked, first run is " + string( global.first_run )  );
 	
 #endregion
@@ -80,6 +88,17 @@ var _cat = "INI";
 	
 #endregion
 
+#region Initiate Push Notifications
+	
+	if( global.new_day ){
+		md_process_push_notifications();
+	}
+	
+#endregion
+
 
 //Initiate master controller	
 instance_create_depth( 0,0,450, con_master_controller );
+
+
+//global.first_run = true; 

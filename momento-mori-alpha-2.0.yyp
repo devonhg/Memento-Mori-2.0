@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "341f796c-b103-46df-a457-44a2d53e134a",
+            "Value": {
+                "id": "ddd7cb39-1883-4b35-9700-1291aa31b011",
+                "resourcePath": "extensions\\GooglePlayServicesExtension\\GooglePlayServicesExtension.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "3447d12a-b3b6-47a2-a26f-73d4ce7675ed",
             "Value": {
                 "id": "db7cc8f0-26b5-4785-8beb-b0663cdfa895",
@@ -407,6 +415,14 @@
             }
         },
         {
+            "Key": "3a5e8e97-1526-4757-865c-b041b86c4c40",
+            "Value": {
+                "id": "886ea203-6e2a-48d1-8278-f6779a28c739",
+                "resourcePath": "scripts\\scr_call\\scr_call.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3e27b460-3106-47b0-9e24-81dd0dcc42fd",
             "Value": {
                 "id": "41207bc2-0a36-471b-af17-56c0038cbd6b",
@@ -420,6 +436,14 @@
                 "id": "139e605f-ea7f-4176-a024-1db9c9c74fa9",
                 "resourcePath": "scripts\\dt_convert_angle\\dt_convert_angle.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "41d16fb9-76ae-4135-ae7f-9ca2f560afec",
+            "Value": {
+                "id": "327ced42-3c57-44b6-aee0-5b6fd7fd9f0c",
+                "resourcePath": "objects\\vw_popup_manager\\vw_popup_manager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -475,6 +499,14 @@
             "Value": {
                 "id": "de5ad8b4-76ce-42e4-aa5f-d0a7f07151ec",
                 "resourcePath": "scripts\\ease\\ease.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4e9e44f8-5f46-41ac-8867-967ad93d4991",
+            "Value": {
+                "id": "a4966756-01e1-4d7b-a51b-58c840fd8ee5",
+                "resourcePath": "scripts\\md_create_day\\md_create_day.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -555,6 +587,14 @@
             "Value": {
                 "id": "a7b69d69-d64a-4808-8645-65b44e7c3901",
                 "resourcePath": "scripts\\scr_initiate_timer\\scr_initiate_timer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5e7867ca-1867-44af-a03a-e32a04ceee4a",
+            "Value": {
+                "id": "c18c32d7-970a-45f0-97fd-1d1844c58e0a",
+                "resourcePath": "scripts\\md_process_push_notifications\\md_process_push_notifications.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1549,6 +1589,8 @@
         "9304bca6-f85c-4101-89e9-414b0b93db28",
         "7544b3c9-2257-41cd-8a55-2f253aa21eae",
         "a79b7115-fd17-47cf-941c-5aa15bd22a8e",
+        "4e9e44f8-5f46-41ac-8867-967ad93d4991",
+        "5e7867ca-1867-44af-a03a-e32a04ceee4a",
         "b6ff6e06-21ff-406a-b76d-87aebfed4f53",
         "754b4b79-afe3-4834-a58c-d6a96d8b4749",
         "73a63531-3878-434d-baef-31ca049cc717",
@@ -1565,6 +1607,7 @@
         "8ee64e10-c48a-4dfc-afa3-6df9847889a8",
         "42265f8f-34ac-4ec9-9ff9-36b7e74ad16c",
         "37071682-417f-40b4-8ccc-cf35f871d362",
+        "3a5e8e97-1526-4757-865c-b041b86c4c40",
         "9571f81e-a15c-43dd-8f57-e83ee3c87129",
         "bb474452-858d-4c24-bd0e-01d77fee0399",
         "1b821a37-265d-4e52-a78d-fcd1de8d78e2",

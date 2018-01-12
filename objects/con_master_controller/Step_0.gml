@@ -1,6 +1,6 @@
 /// @description Traces and Debug
 // Test Code
-
+#region//Debug
 var c = camera_get_active()
 
 /*
@@ -17,10 +17,14 @@ dt_track( "Mouse_x", mouse_x );
 dt_track( "Mouse_y", mouse_y );
 
 
-#region//Enable debug on click
+
 	/*
 	if( mouse_check_button_pressed(mb_left) ){
 		game_debug_mode = !game_debug_mode
 	}
 	*/
+#endregion
+
+#region 
+
 #endregion
