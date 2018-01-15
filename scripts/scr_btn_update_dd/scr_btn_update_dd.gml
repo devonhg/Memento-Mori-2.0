@@ -1,0 +1,1 @@
+global.update_dd = get_string_async("Edit your Death Day, note that it can't be more than 20 years into the future.", scr_md_get_dd()); 

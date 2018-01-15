@@ -6,7 +6,7 @@ var _cat = "INI";
 	
 #region Declare core globals
 	//App Specific
-		global.version = "2.2.9";
+		global.version = "2.3.0";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
 
@@ -74,7 +74,7 @@ var _cat = "INI";
 #region Check Day
 	
 	global.new_day = md_is_new_day();
-	//global.new_day = true;//Testing
+	//global.new_day = true;
 	
 #endregion
 

@@ -3,7 +3,6 @@
     "modelName": "GMAmazonFireOptions",
     "mvc": "1.0",
     "name": "Amazon Fire",
-    "option_amazonfire_arch_armv7": true,
     "option_amazonfire_build_tools": "23.0.1",
     "option_amazonfire_compile_sdk": 23,
     "option_amazonfire_display_name": "Made in GameMaker Studio 2",
@@ -39,6 +38,7 @@
     "option_amazonfire_splash_screens_portrait": "${base_options_dir}\\amazonfire\\splash\\portrait.png",
     "option_amazonfire_splash_time": 0,
     "option_amazonfire_support_lib": "23.1.1",
+    "option_amazonfire_sync_android": false,
     "option_amazonfire_target_sdk": 23,
     "option_amazonfire_texture_page": "2048x2048",
     "option_amazonfire_version": {

@@ -10,7 +10,7 @@
     "option_android_build_tools": "23.0.1",
     "option_android_compile_sdk": 23,
     "option_android_device_support": 0,
-    "option_android_display_name": "ByMorte - The High Stakes Productivity App",
+    "option_android_display_name": "Made in GameMaker Studio 2",
     "option_android_facebook_app_display_name": "",
     "option_android_facebook_id": "",
     "option_android_gamepad_support": true,
@@ -36,9 +36,9 @@
     "option_android_orient_landscape_flipped": false,
     "option_android_orient_portrait": true,
     "option_android_orient_portrait_flipped": false,
-    "option_android_package_company": "playfreytechnologies",
-    "option_android_package_domain": "bymorte",
-    "option_android_package_product": "bymorteapp",
+    "option_android_package_company": "PlayFreyTechnologies",
+    "option_android_package_domain": "ByMorte",
+    "option_android_package_product": "ByMorteApp",
     "option_android_permission_bluetooth": false,
     "option_android_permission_internet": true,
     "option_android_permission_network_state": false,
@@ -61,8 +61,8 @@
     "option_android_use_facebook": false,
     "option_android_version": {
         "build": 0,
-        "major": 1,
-        "minor": 0,
+        "major": 2,
+        "minor": 3,
         "revision": 0
     }
 }

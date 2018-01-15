@@ -1,0 +1,1 @@
+url_open("http://bymorte.com/getting-started/");

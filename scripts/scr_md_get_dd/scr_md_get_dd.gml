@@ -1,0 +1,1 @@
+return string(global.deathdate[1]) + "/" + string(global.deathdate[2]) + "/" + string(global.deathdate[0]);
