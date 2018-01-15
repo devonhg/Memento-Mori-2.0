@@ -10,7 +10,7 @@
     "option_android_build_tools": "23.0.1",
     "option_android_compile_sdk": 23,
     "option_android_device_support": 0,
-    "option_android_display_name": "Made in GameMaker Studio 2",
+    "option_android_display_name": "ByMorte - The High Stakes Productivity App",
     "option_android_facebook_app_display_name": "",
     "option_android_facebook_id": "",
     "option_android_gamepad_support": true,
