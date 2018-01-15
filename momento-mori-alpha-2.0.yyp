@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "3456a2cf-9f75-43c7-907c-241179c26888",
+            "Value": {
+                "id": "783dc707-ba9c-4f8f-939a-6b17d4bdc1b9",
+                "resourcePath": "scripts\\md_wipe_notifications\\md_wipe_notifications.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "35004e03-c734-4e89-bc8d-5ce43ba389ab",
             "Value": {
                 "id": "5c5b12e1-b4ec-486f-a913-3638848faba1",
@@ -1591,6 +1599,7 @@
         "a79b7115-fd17-47cf-941c-5aa15bd22a8e",
         "4e9e44f8-5f46-41ac-8867-967ad93d4991",
         "5e7867ca-1867-44af-a03a-e32a04ceee4a",
+        "3456a2cf-9f75-43c7-907c-241179c26888",
         "b6ff6e06-21ff-406a-b76d-87aebfed4f53",
         "754b4b79-afe3-4834-a58c-d6a96d8b4749",
         "73a63531-3878-434d-baef-31ca049cc717",

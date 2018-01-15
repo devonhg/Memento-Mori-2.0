@@ -1,16 +1,10 @@
-/// @description Insert description here
+/// @description Draw the counter
 //Declare Temporary Variables
 var _days_left = scr_calculate_days_left();
 var _day_plural = "days";
-var _black = global.co_black;
-var _death_day = scr_md_get_dd();//string(global.deathdate[1]) + "/" + string(global.deathdate[2]) + "/" + string(global.deathdate[0]);
 
-//draw_rectangle_color(0, y_at_fraction(1), x_at_fraction(12), y_at_fraction(3), _black, _black,_black,_black, false);
-/*
-draw_set_alpha(.7);
-draw_rectangle_color(0, y - height_at_fraction(1.3), x_at_fraction(12), y + height_at_fraction(1.3), _black, _black,_black,_black, false);
-draw_set_alpha(1);
-*/
+var _death_day = scr_md_get_dd();
+
 //Set to singular if neccessary
 if( _days_left == 1 || _days_left == 1 ){
     _day_plural = "day";

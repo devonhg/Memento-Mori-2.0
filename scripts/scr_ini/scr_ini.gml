@@ -6,7 +6,7 @@ var _cat = "INI";
 	
 #region Declare core globals
 	//App Specific
-		global.version = "2.2.5";
+		global.version = "2.2.6";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
 
@@ -24,10 +24,6 @@ var _cat = "INI";
 		global.font = fnt_main_2; 
 	
 	//Colors
-		global.co_light_grey = make_colour_rgb(221, 221, 221);
-		global.co_black = make_colour_rgb(0, 0, 0);
-		global.co_dark_grey = make_colour_rgb(51, 51, 51);
-		
 		global.co_prim = make_colour_rgb(128,128,128);//Grey
 		global.co_sec = make_colour_rgb(249,249,249);//Whiteish
 		global.co_tert = make_colour_rgb(189,230,189);//Green
@@ -70,7 +66,7 @@ var _cat = "INI";
 	scr_md_set_dd(scr_md_get_dd());
 	ini_close(); 
 	scr_call_bymorte_qotd(); 
-	global.first_run = true; //Testing, comment out otherwise
+	//global.first_run = true; //Testing, comment out otherwise
 	scr_debug_msg( _cat, "Data checked, first run is " + string( global.first_run )  );
 	
 #endregion
@@ -78,6 +74,7 @@ var _cat = "INI";
 #region Check Day
 	
 	global.new_day = md_is_new_day();
+	//global.new_day = true;//Testing
 	
 #endregion
 

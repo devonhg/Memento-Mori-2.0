@@ -1,6 +1,7 @@
 /// @description Opening Logic
 scr_object_ini(); 
 
-ten_minutes = room_speed * (600);
+//minutes = 
+check_time = room_speed * 3;//(room_speed * 60) * 3;
 //Call every 10 minutes
-	alarm[1] = ten_minutes;
+	alarm[1] = check_time;

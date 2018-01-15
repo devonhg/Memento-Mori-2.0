@@ -58,22 +58,13 @@ scr_fullwindow( 1000 );//Configure the screen dimensions
 		scr_create_popup( 
 		"Legal", 
 		"The Legal Stuff", 
-		"By using ByMorte you agree to our Terms of Service and our Usage Agreement.",
+		"By using ByMorte you agree to our Privacy Policy and our Usage Agreement.",
 		"PopUps",
 		"Read Terms",
 		scr_call,
 		"Legal"
 		);		
-		/*
-		scr_create_popup( 
-		"Introduction", 
-		"About ByMorte", 
-		"ByMorte is simply an app that tracks how much time you have left until a fictitious 'death day'. This is designed to pressure you to accelerate your life's ambitions.",
-		"PopUps",
-		)
-		*/
 	
-		//scr_create_popup("Introduction", "About ByMorte", "Using ByMorte is very simple. Simply check ByMorte every day and reflect on your time you have left.", "PopUps");
 		scr_create_popup( 
 		"Introduction", 
 		"Usage Tutorial", 
