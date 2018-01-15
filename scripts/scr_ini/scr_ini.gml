@@ -6,7 +6,7 @@ var _cat = "INI";
 	
 #region Declare core globals
 	//App Specific
-		global.version = "2.3.0";
+		global.version = "2.3.1";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
 
