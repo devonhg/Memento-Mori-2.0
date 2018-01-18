@@ -1,0 +1,14 @@
+2.3.3
+
+Bug Fixes
+- Occasional bug with button calls that crashed the app
+- Adjusted Button and Font Sizes
+- Fixed visual bug with timer on some devices
+- Applied patch to Quote Of The Day not updating/displaying correctly
+- Cleaned up Code
+- Fixed spelling errors
+
+New Features
+- Tapping the pendulum opens the QOTD
+- Back button closes popups now
+- If past the death day, text changes to "days since"

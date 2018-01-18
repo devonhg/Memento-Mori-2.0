@@ -18,7 +18,7 @@ draw_set_font( global.font );
 	draw_set_valign( fa_middle );
 		//text_at_fraction( _x + x_at_fraction( 5.5 ), _y + y_at_fraction(2), title_text, height_at_fraction(1), width_at_fraction( 10 ), global.co_dark_grey );
 		//text_at_fraction( _x + x_at_fraction( 5.5 ), _y + y_at_fraction(2.5), sub_title_text, height_at_fraction(.5), width_at_fraction( 10 ), global.co_dark_grey );
-		text_at_fraction( _x + width_at_fraction( 5.5 ), _y + height_at_fraction(1), title_text, height_at_fraction(1), width_at_fraction( 10 ), col_prim );
+		text_at_fraction( _x + width_at_fraction( 5.5 ), _y + height_at_fraction(1), title_text, height_at_fraction(.8), width_at_fraction( 10 ), col_prim );
 		
 		if( is_string(content) ){
 			text_at_fraction( _x + width_at_fraction( 5.5 ), _y + height_at_fraction(5.5), content, height_at_fraction(.5), width_at_fraction( 10 ), col_prim );

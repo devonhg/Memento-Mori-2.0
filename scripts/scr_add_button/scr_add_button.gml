@@ -9,7 +9,7 @@
 ///@param *Width The parent object to adhere to, -1 to default 6
 
 #region Static Arguments
-	var _width = width_at_fraction( 8 );
+	var _width = width_at_fraction( 10 );
 	var _height = height_at_fraction( 1 ); 
 #endregion
 

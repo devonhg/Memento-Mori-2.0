@@ -16,7 +16,6 @@ if( ini_key_exists("Date", "cur_day") ){//We've clearly set the day at some poin
 	if( _date_comp != 0 ){
 		ini_write_real( "Date", "prev_day", _prev_day);
 		ini_write_real( "Date", "cur_day", date_get_day(date_current_datetime()) );
-		vw_on_new_day(); 
 		global.new_day = true;  
 	}
 }else{//Otherwise, set as today.

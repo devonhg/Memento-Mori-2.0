@@ -26,7 +26,7 @@ if( initiated ){
 	draw_set_alpha(_opacity);		
 		text_at_fraction( x_at_fraction(6), y_at_fraction(6), dt_clock(_timer_output, 2, false), height_at_fraction(2), width_at_fraction(6), global.co_prim );
 		if( play && !synced){ text_at_fraction( x_at_fraction(6), y_at_fraction(7.5), "syncing...", height_at_fraction(.8), width_at_fraction(6), global.co_prim ); }
-		draw_box_scaled(  x_at_fraction(6), y_at_fraction(6), width_at_fraction(8), height_at_fraction(2), global.co_sec, global.co_sec, 0 );
+		draw_box_scaled(  x_at_fraction(6), y_at_fraction(6), width_at_fraction(10.8), height_at_fraction(2), global.co_sec, global.co_sec, 0 );
 	draw_set_alpha(1)
 	draw_set_halign(fa_left);
 	draw_set_valign( fa_bottom );

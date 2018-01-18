@@ -25,6 +25,11 @@ if ds_map_find_value(async_load, "id") == global.http_async{
 			global.qod[3] = _data[? "link"];
 			
 			_dbg_msg = "Async - HTTP Successful";
+			
+			if( global.new_day ){
+				scr_call("CallQOTD");
+				global.new_death_day = false; 
+			}
 		}else{			
 			_dbg_msg = "Async - JSON Parse Failed!";
 		}

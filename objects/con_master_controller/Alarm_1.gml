@@ -1,6 +1,7 @@
 /// @description Regular Check
-if( md_is_new_day() ){
-	vw_btn_call_qotd(); 	
+if( md_is_new_day() ){	
+	global.new_death_day = true; 
+	scr_call_bymorte_qotd();
 	md_process_push_notifications();
 }
 
