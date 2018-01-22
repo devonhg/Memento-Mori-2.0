@@ -10,8 +10,8 @@ scr_fullwindow( 1000 );//Configure the screen dimensions
 			var _drawer_btn_height = height_at_fraction(1);			
 			
 		//Populate main objects
-			instance_create_layer( x_at_fraction(6), y_at_fraction(9), "Instances_Overlay", vw_counter );
-			instance_create_layer( x_at_fraction(6), y_at_fraction(-.05), "Instances", vw_pendulum );
+			instance_create_layer( x_at_fraction(6), y_at_fraction(-.05), "Instances_Overlay", vw_pendulum );
+			instance_create_layer( x_at_fraction(6), y_at_fraction(9), "Instances", vw_counter );
 			instance_create_layer( x_at_fraction(6), 48, "Instances_Overlay", vw_top_menu );
 			instance_create_layer( x_at_fraction(6), y_at_fraction(.5), "Instances", md_data_async );
 			
@@ -23,7 +23,7 @@ scr_fullwindow( 1000 );//Configure the screen dimensions
 		
 		//Initiate our menu drawer
 			var _drwer_menu = scr_drawer( "Drawers", false, "Menu", "Access Features" );
-			scr_add_button( 0, y_at_fraction(-1.2 + _adjust), "Todays Quote", scr_call, 0, _drwer_menu, "call_qotd" );
+			scr_add_button( 0, y_at_fraction(-1.2 + _adjust), "Todays Quote", scr_call, 0, _drwer_menu, "CallQOTD" );
 			scr_add_button(  0, y_at_fraction(0 + _adjust), "Meditate", scr_call, 2, _drwer_menu, "call_meditate");
 	
 		//Initiate our Meditation drawer
@@ -37,11 +37,12 @@ scr_fullwindow( 1000 );//Configure the screen dimensions
 
 #region New Day
 	if( global.new_day and !global.first_run ){
-		//var _sec = 3;//Number of seconds to delay the new day delayed script
-		//alarm[0] = room_speed * _sec; //New Day Delayed				 
-	}else{//We still need to reset the new day value. 
-		global.new_day = false;
+		//Code to run on start if it's a new day. 			 
 	}
+	/*
+	else{//We still need to reset the new day value. 
+		global.new_day = false;
+	}*/
 	
 #endregion
 
@@ -65,6 +66,12 @@ scr_fullwindow( 1000 );//Configure the screen dimensions
 		"Go ahead and experiment with the app, such as hitting the menu and settings buttons at the top left and right. As you experiement we will explain each piece of the app.",
 		"PopUps"
 		);
+		
+		google_analytics_event("Launch", "First Run", 1, global.appID);
 	}
 
 #endregion
+
+google_analytics_event("Launch", "App Launch", 1, global.appID);
+google_analytics_event("Launch", "New Day:" + string(global.new_day), 1, global.appID);
+google_analytics_event("Launch", string(global.days_left) + " days left", 1, global.appID);

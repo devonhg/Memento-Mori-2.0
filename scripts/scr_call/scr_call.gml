@@ -42,7 +42,7 @@ switch( _index ){
 					)		
 					global.tut_qotd = true; 
 			}
-
+			//show_message( global.qod[0] );
 			if( global.qod[0] != "null" ){
 				scr_create_popup( 
 					"Quote", 
@@ -53,7 +53,12 @@ switch( _index ){
 					scr_open_link,
 					global.qod[3]
 					)
-			}	
+				google_analytics_event("QOTD", "Viewing", 1, global.appID);
+			}else{
+				scr_debug_msg("QOTD", "Quote not set, getting one.")
+				scr_call_bymorte_qotd(true);
+				//global.call_qotd = true;
+			}
 		break;
 	#endregion
 
@@ -89,6 +94,7 @@ switch( _index ){
 		break;
 	#endregion
 	
+	/*
 	#region Call QOTD
 		case "call_qotd":
 			if( global.first_run && !global.tut_qotd ){
@@ -114,6 +120,8 @@ switch( _index ){
 			}
 		break;
 	#endregion
+	*/
+	
 	
 	#region Call Meditate Drawer
 		case "call_meditate":

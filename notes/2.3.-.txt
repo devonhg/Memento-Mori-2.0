@@ -12,3 +12,11 @@ New Features
 - Tapping the pendulum opens the QOTD
 - Back button closes popups now
 - If past the death day, text changes to "days since"
+
+2.3.4
+
+Bug Fixes
+- Fixed bug that completely crashed the app sometimes
+
+New Features
+- Counter now shows previous days

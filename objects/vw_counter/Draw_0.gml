@@ -34,6 +34,16 @@ draw_set_color( global.co_prim );
 	//var _h_adj = -100; 
 	var _col = global.co_prim;
 	var _txt_h_adj = .5;
+	
+	//Accented days
+	draw_set_alpha(.9);
+	text_at_fraction( x, y-height_at_fraction(2), string( _days_left+2 ), height_at_fraction( .6 + _txt_h_adj ), width_at_fraction( 11 ), _col );
+	draw_box_scaled(x, y-height_at_fraction(2), width_at_fraction(12), height_at_fraction( .6 + _txt_h_adj ), global.co_sec, global.co_sec, 0);
+	draw_set_alpha(.7);
+	text_at_fraction( x, y-height_at_fraction(1), string( _days_left+1 ), height_at_fraction( .8 + _txt_h_adj ), width_at_fraction( 11 ), _col ); 
+	draw_box_scaled(x, y-height_at_fraction(1), width_at_fraction(12), height_at_fraction( .8 + _txt_h_adj ), global.co_sec, global.co_sec, 0);
+	draw_set_alpha(1);
+	//Actual Days
 	text_at_fraction( x, y, string( _days_left ), height_at_fraction( 1 + _txt_h_adj ), width_at_fraction( 11 ), _col ); 
 	text_at_fraction( x, y+height_at_fraction(0.7), _days_text, height_at_fraction( .1 + _txt_h_adj ), width_at_fraction( 11 ), _col ); 
 	text_at_fraction( x, y+height_at_fraction(1.5), _death_day, height_at_fraction( .05 + _txt_h_adj ), width_at_fraction( 11 ), _col ); 

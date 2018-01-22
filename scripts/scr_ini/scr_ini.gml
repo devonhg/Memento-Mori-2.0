@@ -3,25 +3,28 @@ var _cat = "INI";
 	draw_set_font( fnt_debug_font );
 	randomize(); 
 #endregion
-	
+
 #region Declare core globals
 	//App Specific
-		global.version = "2.3.3";
+		global.version = "2.3.4";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
+		global.call_qotd = false; //For if the call is made, but a  qotd hasn't been set. 
+		global.os = md_get_os();
 
 	//Database Specific
 		global.db = "database.ini";//Local database
 		global.qdb = "quotes.ini";//Quotes database
 		global.new_day = false;//New Day
+		//Quote of the day
 			global.qod[0] = "null";//0 = ID
 			global.qod[1] = "null";//1 = Quote
 			global.qod[2] = "null";//2 = Author
 			global.qod[3] = "null";//3 = Link
 		global.qdb = -1;//Quote Database
-		global.qod = "";//The quote of the day
 		
 		global.font = fnt_main_2; 
+		global.days_used = md_get_days_used(); 
 	
 	//Colors
 		global.co_prim = make_colour_rgb(128,128,128);//Grey
@@ -45,6 +48,14 @@ var _cat = "INI";
 		
 	
 	scr_debug_msg( _cat, "Core Globals Declared"  );
+#endregion
+
+#region Analytics
+
+	global.appID = device_get_id();
+	
+	google_analytics_init("UA-111350478-2", "ByMorte-"+ global.os, global.version, global.appID);
+
 #endregion
 
 #region Check Data
@@ -74,7 +85,7 @@ var _cat = "INI";
 #region Check Day
 	
 	global.new_day = md_is_new_day();
-	global.new_day = true;
+	//global.new_day = true;
 	
 #endregion
 

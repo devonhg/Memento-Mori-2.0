@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "5a477c0f-5c4b-42c9-867e-c8cdae3c191d",
+            "Value": {
+                "id": "292d998a-f322-4bb4-af95-a79eddd6ffef",
+                "resourcePath": "scripts\\md_get_days_used\\md_get_days_used.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5b209cfc-d772-41b6-81f0-b1fc75f586e9",
             "Value": {
                 "id": "37fb7cf1-7739-4585-8d26-39c681c0be10",
@@ -580,6 +588,14 @@
                 "id": "9d396b0b-4031-49b0-8ed3-29ed67727190",
                 "resourcePath": "scripts\\dt_rect_outline_width\\dt_rect_outline_width.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5bb9f8e2-116a-40c2-8dbe-948b9bb5157a",
+            "Value": {
+                "id": "849b1529-e1cb-45dc-9128-28e902724788",
+                "resourcePath": "notes\\Analytics Readme.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -983,6 +999,14 @@
             }
         },
         {
+            "Key": "9e79b35a-a29a-4010-9dc0-f6414104e4b4",
+            "Value": {
+                "id": "ab22c9cf-b864-4cc1-9ab9-1675309b80a4",
+                "resourcePath": "scripts\\md_get_os\\md_get_os.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e9c21d3-3e4d-4d37-927c-de7a8db027c6",
             "Value": {
                 "id": "d2e9c2c3-89de-49c8-8c66-f0b5c8798419",
@@ -1303,6 +1327,14 @@
             }
         },
         {
+            "Key": "ce9b6987-10e0-47a2-ac8d-57f7dc06f610",
+            "Value": {
+                "id": "4de3d5c6-7cf0-448b-a3c8-0a12c613e28f",
+                "resourcePath": "scripts\\device_get_id\\device_get_id.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf0e91fb-a7c6-4c4d-acb2-4ad4f8256c4d",
             "Value": {
                 "id": "b10f5551-2fe0-4442-8c72-2b58332eff02",
@@ -1503,10 +1535,26 @@
             }
         },
         {
+            "Key": "f4f0bc9c-fdbd-4e8c-be07-278c6b199e8e",
+            "Value": {
+                "id": "cbbcf359-3126-4de2-ab39-3febdac0bbb1",
+                "resourcePath": "extensions\\GoogleAnalytics\\GoogleAnalytics.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "f666d2c5-80bc-420a-9b07-3f1519105524",
             "Value": {
                 "id": "0aa89360-0e7b-4a52-96ae-d49d4384ac3e",
                 "resourcePath": "scripts\\point_in_rectangle_scaled\\point_in_rectangle_scaled.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f73f23c4-2aaf-4449-9e02-587755b3ec37",
+            "Value": {
+                "id": "b7d50dd5-a436-42d8-b0a1-02b5debc49aa",
+                "resourcePath": "scripts\\random_string\\random_string.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1577,6 +1625,8 @@
         "7515b387-818e-4671-bd4b-d56eec897d5d",
         "3456a2cf-9f75-43c7-907c-241179c26888",
         "5e7867ca-1867-44af-a03a-e32a04ceee4a",
+        "9e79b35a-a29a-4010-9dc0-f6414104e4b4",
+        "5a477c0f-5c4b-42c9-867e-c8cdae3c191d",
         "b6ff6e06-21ff-406a-b76d-87aebfed4f53",
         "754b4b79-afe3-4834-a58c-d6a96d8b4749",
         "37071682-417f-40b4-8ccc-cf35f871d362",
@@ -1589,11 +1639,11 @@
         "d8423857-048f-458c-90f1-59e6a55abf93",
         "9dbff37e-4306-43ad-bc15-a35bd4122b23",
         "3447d12a-b3b6-47a2-a26f-73d4ce7675ed",
-        "a397de18-db0f-4b15-baa9-f0b44e481b5d",
         "43953f24-6356-472c-ae88-67a75351c2a2",
         "5d1d4b66-4540-460a-aa45-63cadf4a0034",
         "ab142176-3122-41e0-b818-b736784b9f23",
         "12b8cfa7-0a39-413b-8f6b-4b168584fd81",
+        "a397de18-db0f-4b15-baa9-f0b44e481b5d",
         "241f6b3f-fe62-4d41-9609-bd941c1f9ed5",
         "1dfd64f7-8a9e-4b17-8569-46714dee10c2",
         "2fdc39eb-5c30-445f-b459-7a6ddd5be4e5",
@@ -1632,7 +1682,9 @@
         "e4831c48-41c7-4758-bcaa-457215340782",
         "4644c763-27e5-40f6-8176-00730527a639",
         "1041cc0f-a921-4c07-b5e9-fedcf5e5ed4e",
-        "355db09f-52bd-4a22-a8c4-98b117178ac1"
+        "355db09f-52bd-4a22-a8c4-98b117178ac1",
+        "ce9b6987-10e0-47a2-ac8d-57f7dc06f610",
+        "f73f23c4-2aaf-4449-9e02-587755b3ec37"
     ],
     "tutorial": ""
 }

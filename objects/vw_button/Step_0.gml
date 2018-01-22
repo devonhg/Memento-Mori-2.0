@@ -39,6 +39,7 @@ if( !destroyed ){
 
 				if( point_in_rectangle_scaled(mouse_x, mouse_y, x, y, WW, HH) && script_exists( call_script ) && mouse_check_button_pressed( mb_left ) ){
 					script_execute( call_script, parent_object, id, argument_1);
+					google_analytics_event("Button", text, 1, global.appID);
 				}
 			}
 	
@@ -56,6 +57,7 @@ if( !destroyed ){
 
 				if( position_meeting( mouse_x, mouse_y, id ) && script_exists( call_script ) && mouse_check_button_pressed( mb_left ) ){
 					script_execute( call_script, parent_object, id, argument_1 );
+					google_analytics_event("Button", text, 1, global.appID);
 				}
 			}
 	
