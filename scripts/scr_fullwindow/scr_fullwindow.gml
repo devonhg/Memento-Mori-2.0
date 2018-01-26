@@ -24,6 +24,7 @@ setHeight = argument[0];
 	
 //Apply Calculations
 	scale_to = floor(dispH/setHeight);
+	if( scale_to = 0 ) scale_to = 1;
 	win_width = view_width*scale_to;
 	win_height = view_height*scale_to;
 	window_set_size( win_width, win_height );

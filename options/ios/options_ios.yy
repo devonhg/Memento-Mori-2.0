@@ -28,10 +28,10 @@
     "option_ios_icon_iphone_spotlight_80": "${options_dir}\\ios\\icons\\spotlight\\iphone_80.png",
     "option_ios_icon_itunes_artwork_1024": "${options_dir}\\ios\\icons\\itunes\\itunes_1024.png",
     "option_ios_interpolate_pixels": false,
-    "option_ios_orientation_landscape": true,
-    "option_ios_orientation_landscape_flipped": true,
+    "option_ios_orientation_landscape": false,
+    "option_ios_orientation_landscape_flipped": false,
     "option_ios_orientation_portrait": true,
-    "option_ios_orientation_portrait_flipped": true,
+    "option_ios_orientation_portrait_flipped": false,
     "option_ios_output_dir": "~\/GameMakerStudio2\/iOS",
     "option_ios_push_notifications": true,
     "option_ios_scale": 0,
@@ -54,9 +54,9 @@
     "option_ios_texture_page": "2048x2048",
     "option_ios_use_facebook": false,
     "option_ios_version": {
-        "build": 0,
-        "major": 1,
-        "minor": 0,
+        "build": 5,
+        "major": 2,
+        "minor": 3,
         "revision": 0
     }
 }

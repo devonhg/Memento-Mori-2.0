@@ -1,5 +1,13 @@
+2.3.5
+
 Bug Fixes
 - Modified the scr_fullwindow script to accomodate macs
 - Cleaned up Code
 - Added content related to iOS release
 - Resolved a mislocated sound resource
+
+2.3.6
+
+Bug Fixes
+- Set Iphones to have a fixed orientation
+- Corrected another visual issue with iphones

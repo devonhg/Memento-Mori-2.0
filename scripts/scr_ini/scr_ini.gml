@@ -6,7 +6,7 @@ var _cat = "INI";
 
 #region Declare core globals
 	//App Specific
-		global.version = "2.3.5";
+		global.version = "2.3.6";
 		global.version_rank = "Alpha";
 		global.first_run = false; 
 		global.call_qotd = false; //For if the call is made, but a  qotd hasn't been set. 
