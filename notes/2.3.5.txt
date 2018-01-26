@@ -11,3 +11,6 @@ Bug Fixes
 Bug Fixes
 - Set Iphones to have a fixed orientation
 - Corrected another visual issue with iphones
+
+2.3.7
+- iOS, fixed the bundle name

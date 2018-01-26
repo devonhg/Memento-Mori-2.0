@@ -3,7 +3,7 @@
     "modelName": "GMiOSOptions",
     "mvc": "1.0",
     "name": "iOS",
-    "option_ios_bundle_name": "playfreytechnologies.playfreytechnologies.bymorteappios",
+    "option_ios_bundle_name": "bymorte.playfreytechnologies.bymorteappios",
     "option_ios_devices": 0,
     "option_ios_display_name": "ByMorte - The High Stakes Productivity App",
     "option_ios_facebook_app_display_name": "",
@@ -54,7 +54,7 @@
     "option_ios_texture_page": "2048x2048",
     "option_ios_use_facebook": false,
     "option_ios_version": {
-        "build": 5,
+        "build": 7,
         "major": 2,
         "minor": 3,
         "revision": 0
